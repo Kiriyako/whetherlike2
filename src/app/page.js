@@ -52,7 +52,7 @@ export default function Main(){
     </form><br /> </div>
     <div>
 
-    <div key={weatherData.name} id ="tempDisplay">
+    <div key={weatherData && weatherData.name} id ="tempDisplay">
     <div id ="resultsfor">
      Results for {weatherData && weatherData.name}, {country} </div><br></br>
     <div className="text-4xl justify-center" id="temppp"> <img src={link}></img> {temp}°C <br></br></div>
